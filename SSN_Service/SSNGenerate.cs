@@ -3,7 +3,7 @@
 
 namespace SSN_Service
 {
-    public class Class1
+    public class SSNGenerate
     {
 
         public static long GenerateSSN()

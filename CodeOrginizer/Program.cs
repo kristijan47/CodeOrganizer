@@ -1,6 +1,7 @@
 ﻿using System;
 using CodeOrginizer.Entities;
 using CodeOrginizer.Enum_Roles;
+using SSN_Service;
 
 
 
@@ -15,7 +16,7 @@ namespace CodeOrginizer
             john.Address = new Address();
             john.Address.Name = "Wall street";
             john.Address.Number = 24;
-            john.SSN = GenerateSSN();
+            john.SSN = SSNGenerate.GenerateSSN();
             john.PrintPerson();
 
             Console.WriteLine("------------------------------------");
@@ -35,7 +36,7 @@ namespace CodeOrginizer
                 Name = "Bob",
                 Age = 55,
                 Address = bobsAdress,
-                SSN = GenerateSSN(),
+                SSN = SSNGenerate.GenerateSSN(),
                 Job = new Job()
                 {
                     Address = bobWorkingAdress,
